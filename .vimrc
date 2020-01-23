@@ -35,9 +35,6 @@ set t_Co=256
 " ---------------------------------------------
 " onedark.vim Settings
 " ---------------------------------------------
-"let g:onedark_hide_endofbuffer=1
-"let g:onedark_termcolors=256
-"let g:onedark_terminal_italics=1
 
 
 " ---------------------------------------------
@@ -76,7 +73,7 @@ inoremap {}	{}
 " ---------------------------------------------
 " While in directory view, used to open file in split screen
 " ---------------------------------------------
-set path+=/home/mcovarru/**
+" set path+=/home/mcovarru/**
 
 
 
@@ -106,40 +103,21 @@ set expandtab
 set showcmd
 
 
-" ---------------------------------------------
-" Highlight Trailing Whitespaces
-" ---------------------------------------------
-highlight RedundantSpaces ctermbg=darkred guibg=#382424
-2match RedundantSpaces /\s\+$/
-
-
-" ---------------------------------------------
-" Highlight when you go beyond 120 characters
-" ---------------------------------------------
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%121v.\+/
-
 
 " ---------------------------------------------
 " Gruvbox Color Scheme Settings
 " ---------------------------------------------
 colorscheme gruvbox
 set background=dark
-"let g:gruvbox_italics=1
-"let g:gruvbox_contrast_dark='hard'
 
 
 " ---------------------------------------------
 " Airline & Airline Themes Settings
 " ---------------------------------------------
 let g:airline_theme='zenburn'
-"let g:airline_left_sep = '▶'
-"let airline_right_sep = '◀'
 let g:airline_detect_modified=1
 let g:airline_detect_paste=1
 let g:airline_detect_spell=1
-"let g:airline_section_b = '%{strftime("%c")}'
-"let g:airline_section_y = 'BN: %{bufnr("%")}'
 let g:airline_powerline_font=1
 let g:airline_symbols_ascii=1
 
@@ -157,3 +135,21 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" Start syntasting without automatically checking for errors
+let g:syntastic_mode_map = {"mode": "passive"}
+
+" ---------------------------------------------
+" Highlight Trailing Whitespaces
+" ---------------------------------------------
+highlight RedundantSpaces ctermbg=darkred guibg=#382424
+2match RedundantSpaces /\s\+$/
+
+
+" ---------------------------------------------
+" Highlight when you go beyond 120 characters
+" ---------------------------------------------
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%121v.\+/
+
+
