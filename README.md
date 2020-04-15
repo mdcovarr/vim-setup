@@ -17,3 +17,7 @@ cd vim-setup
 Now you should have a pretty cool vim interface. If you are interested in which
 plug ins were installed take a look at your .vimrc file.
 
+
+# Also included
+I have also included my tmux configuration file it for those who like the layout :)
+
